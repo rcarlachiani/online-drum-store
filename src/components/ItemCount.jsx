@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { useState }  from 'react'
 import * as bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -10,12 +9,16 @@ function ItemCount() {
     const sumaContador=()=>{
         if (contador <= 9) {
             setContador(contador+1)
+        } else {
+            alert("Se alcanzo el stock maximo del producto")
         }
     }
 
     const restaContador=()=>{
         if (contador >= 2) {
             setContador(contador-1)
+        } else {
+            alert("Cantidad minima posible del producto")
         }
     }
     
