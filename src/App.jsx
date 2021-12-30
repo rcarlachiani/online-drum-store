@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer titulo='Catalogo de productos' />
+      <ItemListContainer titulo='Catálogo de productos' />
     </div>
   )
 }
