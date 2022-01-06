@@ -13,6 +13,7 @@ export const productos = [
         imagen: 'https://i.ibb.co/fDGSjWT/Los-cabos.jpg', 
         precio: '$1250', 
         stock: 5
+        desc: 'Madera: Hickory | Punta: Madera | Longitud: 40.55cm | Diámetro: 1.42cm'
     },
     {
         id: 3, 
@@ -20,6 +21,7 @@ export const productos = [
         imagen: 'https://i.ibb.co/9VnbPDT/Vater.jpg', 
         precio: '$1150', 
         stock: 8
+        desc: 'Madera: Hickory | Punta: Madera | Longitud: 41.00cm | Diámetro: 1.43cm'
     },
     {
         id: 4, 
@@ -27,6 +29,7 @@ export const productos = [
         imagen: 'https://i.ibb.co/Lgxm91T/Pro-mark.jpg', 
         precio: '$1300', 
         stock: 3
+        desc: 'Madera: Hickory | Punta: Madera | Longitud: 40.84cm | Diámetro: 1.46cm'
     }
 ]
 
