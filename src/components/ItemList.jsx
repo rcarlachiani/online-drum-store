@@ -5,7 +5,7 @@ import { productos } from "./products"
 function ItemList() {
     return (
         <div style={{display: 'flex'}}>
-            {productos.map(prod=> <Item id={prod.id} imagen={prod.imagen} nombre={prod.nombre} precio={prod.precio} />)}
+            {productos.map(prod=> <Item id={prod.id} imagen={prod.imagen} nombre={prod.nombre} precio={prod.precio} stock={prod.stock} />)}
         </div>
     )
 }
