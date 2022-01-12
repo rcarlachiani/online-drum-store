@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { renderProd } from "./products";
+import { renderProd } from "../Products/products";
 import ItemList from './ItemList';
+import './Item.css'
 
 function ItemListContainer(propiedades) {
 
@@ -15,7 +16,7 @@ function ItemListContainer(propiedades) {
     }, [])
     
     return (
-        <div style={{marginTop: 20}}>
+        <div style={{marginTop: 20, textAlign: 'center'}}>
             <h1 style={{margin: 20}}>{propiedades.titulo}</h1>
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 { loading ? <div className="spinner-border text-warning" role="status">

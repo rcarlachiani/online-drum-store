@@ -1,0 +1,63 @@
+.ItemContainer {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 50px;
+    
+}
+
+.card-img-top {
+    width: 240px;
+    height: 220px;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.contador-container {
+    display: flex; 
+    justify-content: center; 
+    align-content: center; 
+    margin-top: 30px; 
+    margin-bottom: 15px;
+}
+
+.contador {
+    width: 85px !important;
+}
+
+.btn-detail {
+    font-size: 12px !important;
+}
+
+.btn-cantidad {
+    width: 30px !important;
+}
+
+.btn-agregar {
+    margin-bottom: 20px !important;
+}
+
+.detail-container {
+    display: flex; 
+    justify-content: center; 
+    text-align: center; 
+    margin-top: 50px;
+}
+
+.detail-card {
+    max-width: 900px; 
+    padding: 10px;
+}
+
+.detail-img {
+    width: 600px; 
+    padding: 10px;
+}
+
+.detail-descripcion {
+    font-size: 15px;
+}
+
+.detail-precio {
+    font-size: 20px;
+}
+

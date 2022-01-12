@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { renderProd } from './products'
+import { renderProd } from '../Products/products'
 import ItemDetail from './ItemDetail'
+import './Item.css'
 
 const ItemDetailContainer = () => {
     

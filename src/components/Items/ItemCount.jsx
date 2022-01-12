@@ -1,6 +1,7 @@
 import React, { useState }  from 'react'
 import * as bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Item.css'
 
 function ItemCount(stockProd) {
 
@@ -26,12 +27,12 @@ function ItemCount(stockProd) {
     
     return (
         <div>
-            <div style={{display: 'flex', justifyContent: 'center', alignContent: 'center', marginTop: 30, marginBottom: 15}}>
-                <button type="button" className="btn btn-sm btn-danger" onClick={restaContador} style={{width: 30}}>-</button>
-                <button type="button" className="btn btn-light" style={{width: 85}}>{contador}</button>
-                <button type="button" className="btn btn-sm btn-success" onClick={sumaContador} style={{width: 30}}>+</button>
+            <div className='contador-container'>
+                <button type="button" className="btn btn-sm btn-danger btn-cantidad" onClick={restaContador}>-</button>
+                <button type="button" className="btn btn-light contador">{contador}</button>
+                <button type="button" className="btn btn-sm btn-success btn-cantidad" onClick={sumaContador}>+</button>
             </div>
-            <button type="button" className="btn btn-outline-primary" style={{marginBottom: 20}}>Agregar al carrito</button>
+            <button type="button" className="btn btn-outline-primary btn-agregar">Agregar al carrito</button>
         </div>
     )
 }
