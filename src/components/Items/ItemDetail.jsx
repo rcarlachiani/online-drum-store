@@ -1,6 +1,5 @@
 import React from 'react'
 import ItemCount from './ItemCount'
-import * as bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Item.css'
 

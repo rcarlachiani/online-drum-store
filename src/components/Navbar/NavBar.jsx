@@ -17,10 +17,35 @@ function NavBar() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <Link to='/' className='links'>
-                                <a className="nav-link" aria-current="page" href="#">Home</a>
-                            </Link>
-                            <a className="nav-link" href="#">Categorías</a>
+                            <div className="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                <ul className="navbar-nav">
+                                    <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Categorías
+                                    </a>
+                                    <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <Link to='./categoria/palillos' className='links'>
+                                            <li className="dropdown-item">Palillos</li>
+                                        </Link>
+                                        <Link to='./categoria/parches' className='links'>
+                                            <li className="dropdown-item">Parches</li>
+                                        </Link>
+                                        <Link to='./categoria/platillos' className='links'>
+                                            <li className="dropdown-item">Platillos</li>
+                                        </Link>
+                                        <Link to='./categoria/tambores' className='links'>
+                                            <li className="dropdown-item">Tambores</li>
+                                        </Link>
+                                        <Link to='./categoria/pedales' className='links'>
+                                            <li className="dropdown-item">Pedales</li>
+                                        </Link>
+                                        <Link to='./categoria/baterias' className='links'>
+                                            <li className="dropdown-item">Baterías</li>
+                                        </Link>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </div>
                             <a className="nav-link" href="#">Contacto</a>
                         </div>
                     </div>

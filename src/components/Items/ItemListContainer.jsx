@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { renderProd } from "../Products/products";
 import ItemList from './ItemList';
 import './Item.css'
@@ -7,14 +8,22 @@ function ItemListContainer(propiedades) {
 
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
+    const {idCategoria} = useParams()
 
     useEffect(() => {
-        renderProd
-        .then(resp => setProductos(resp))
-        .catch(err => console.log(err))
-        .finally(()=> setLoading(false))
-    }, [])
-    
+        if (idCategoria) {
+            renderProd
+            .then(resp => setProductos(resp.filter(prod=> prod.categoria === idCategoria)))
+            .catch(err => console.log(err))
+            .finally(()=> setLoading(false))
+        } else {
+            renderProd
+            .then(resp => setProductos(resp))
+            .catch(err => console.log(err))
+            .finally(()=> setLoading(false))
+        }
+    }, [idCategoria])
+
     return (
         <div style={{marginTop: 20, textAlign: 'center'}}>
             <h1 style={{margin: 20}}>{propiedades.titulo}</h1>
@@ -23,7 +32,7 @@ function ItemListContainer(propiedades) {
                                 <span className="visually-hidden">Loading...</span>
                             </div>
                     :
-                <ItemList />}
+                <ItemList productos={productos}/>}
             </div>
         </div>
     )

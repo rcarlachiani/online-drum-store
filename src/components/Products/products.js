@@ -1,6 +1,6 @@
 export const productos = [
     {
-        id: 1, 
+        id: '1', 
         categoria: 'palillos',
         nombre: 'Vic-Firth 7A (Wood tip)', 
         imagen: 'https://i.ibb.co/nQY5357/Vic-firth.jpg', 
@@ -9,7 +9,7 @@ export const productos = [
         desc: 'Madera: Hickory | Punta: Madera | Longitud: 40.80cm | Diámetro: 1.30cm'
     },
     {
-        id: 2, 
+        id: '2', 
         categoria: 'palillos',
         nombre: 'Los Cabos 5A (Wood tip)', 
         imagen: 'https://i.ibb.co/fDGSjWT/Los-cabos.jpg', 
@@ -18,7 +18,7 @@ export const productos = [
         desc: 'Madera: Hickory | Punta: Madera | Longitud: 40.55cm | Diámetro: 1.42cm'
     },
     {
-        id: 3, 
+        id: '3', 
         categoria: 'palillos',
         nombre: 'Vater 5B (Wood tip)', 
         imagen: 'https://i.ibb.co/9VnbPDT/Vater.jpg', 
@@ -27,7 +27,7 @@ export const productos = [
         desc: 'Madera: Hickory | Punta: Madera | Longitud: 40.35cm | Diámetro: 1.63cm'
     },
     {
-        id: 4, 
+        id: '4', 
         categoria: 'palillos',
         nombre: 'Pro-Mark 2B (Wood tip)', 
         imagen: 'https://i.ibb.co/Lgxm91T/Pro-mark.jpg', 
@@ -36,7 +36,7 @@ export const productos = [
         desc: 'Madera: Hickory | Punta: Madera | Longitud: 40.80cm | Diámetro: 1.81cm'
     },
     {
-        id: 5, 
+        id: '5', 
         categoria: 'parches',
         nombre: 'Remo Powerstroke 3 Clear 22"', 
         imagen: 'https://i.ibb.co/FXqD794/remo-ps3-clear.jpg', 
@@ -45,7 +45,7 @@ export const productos = [
         desc: 'Capa simple con aro de refuerzo'
     },
     {
-        id: 6, 
+        id: '6', 
         categoria: 'parches',
         nombre: 'Evans EMAD2 Clear 22"', 
         imagen: 'https://i.ibb.co/M9yd4F8/evans-emad2.jpg', 
@@ -54,7 +54,7 @@ export const productos = [
         desc: 'Capa doble con aro de refuerzo y damper intercambiable'
     },
     {
-        id: 7, 
+        id: '7', 
         categoria: 'parches',
         nombre: 'Evans Onyx 14"', 
         imagen: 'https://i.ibb.co/3WP0nk0/evans-onyx.jpg', 
@@ -63,7 +63,7 @@ export const productos = [
         desc: 'Capa doble con arenado color negro'
     },
     {
-        id: 8, 
+        id: '8', 
         categoria: 'parches',
         nombre: 'Evans Reverse Dot 14"', 
         imagen: 'https://i.ibb.co/zfz00D3/evans-reverse-dot.jpg', 
@@ -72,7 +72,7 @@ export const productos = [
         desc: 'Capa simple con centro reforzado y arenado mate semi-transparente'
     },
     {
-        id: 9, 
+        id: '9', 
         categoria: 'parches',
         nombre: 'Remo Emperor Clear 12"', 
         imagen: 'https://i.ibb.co/BqQJ3Dt/remo-clear.jpg', 
@@ -81,7 +81,7 @@ export const productos = [
         desc: 'Capa doble sin arenado ni aro de refuerzo'
     },
     {
-        id: 10, 
+        id: '10', 
         categoria: 'parches',
         nombre: 'Remo Emperor Clear 13"', 
         imagen: 'https://i.ibb.co/BqQJ3Dt/remo-clear.jpg', 
@@ -90,7 +90,7 @@ export const productos = [
         desc: 'Capa doble sin arenado ni aro de refuerzo'
     },
     {
-        id: 11, 
+        id: '11', 
         categoria: 'parches',
         nombre: 'Remo Emperor Clear 16"', 
         imagen: 'https://i.ibb.co/BqQJ3Dt/remo-clear.jpg', 
@@ -99,7 +99,7 @@ export const productos = [
         desc: 'Capa doble sin arenado ni aro de refuerzo'
     },
     {
-        id: 12, 
+        id: '12', 
         categoria: 'parches',
         nombre: 'Remo Ambassador Coated 10"', 
         imagen: 'https://i.ibb.co/9vFM54L/remo-arenado.jpg', 
@@ -108,7 +108,7 @@ export const productos = [
         desc: 'Capa simple con arenado'
     },
     {
-        id: 13, 
+        id: '13', 
         categoria: 'parches',
         nombre: 'Remo Ambassador Coated 12"', 
         imagen: 'https://i.ibb.co/9vFM54L/remo-arenado.jpg', 
@@ -117,7 +117,7 @@ export const productos = [
         desc: 'Capa simple con arenado'
     },
     {
-        id: 14, 
+        id: '14', 
         categoria: 'parches',
         nombre: 'Remo Ambassador Coated 14"', 
         imagen: 'https://i.ibb.co/9vFM54L/remo-arenado.jpg', 
@@ -126,7 +126,7 @@ export const productos = [
         desc: 'Capa simple con arenado'
     },
     {
-        id: 15, 
+        id: '15', 
         categoria: 'parches',
         nombre: 'Remo Ambassador Coated 16"', 
         imagen: 'https://i.ibb.co/9vFM54L/remo-arenado.jpg', 
@@ -135,7 +135,7 @@ export const productos = [
         desc: 'Capa simple con arenado'
     },
     {
-        id: 16, 
+        id: '16', 
         categoria: 'tambores',
         nombre: 'Pearl MCX 14x6.5', 
         imagen: 'https://i.ibb.co/GRsQDwk/tambor-pearl.jpg', 
@@ -144,7 +144,7 @@ export const productos = [
         desc: 'Casco: Maple | Aros: 2.3mm'
     },
     {
-        id: 17, 
+        id: '17', 
         categoria: 'tambores',
         nombre: 'Tama Metalworks 14x6.5', 
         imagen: 'https://i.ibb.co/HFngJGm/tambor-tama.jpg', 
@@ -153,7 +153,7 @@ export const productos = [
         desc: 'Casco: Steel | Aros: 2.3mm'
     },
     {
-        id: 18, 
+        id: '18', 
         categoria: 'tambores',
         nombre: 'DW Collectors Natural Maple 14x5.5', 
         imagen: 'https://i.ibb.co/NnNQYsq/tambor-dw.jpg', 
@@ -162,7 +162,7 @@ export const productos = [
         desc: 'Casco: Maple | Aros: 2.3mm'
     },
     {
-        id: 19, 
+        id: '19', 
         categoria: 'platillos',
         nombre: 'Zildjian Avedis Set', 
         imagen: 'https://i.ibb.co/Pc9ftbZ/set-zildjian.jpg', 
@@ -171,7 +171,7 @@ export const productos = [
         desc: 'Ride: 20" | Hi Hat: 14" | Crash: 16" - 18"'
     },
     {
-        id: 19, 
+        id: '20', 
         categoria: 'platillos',
         nombre: 'Sabian HHX Set', 
         imagen: 'https://i.ibb.co/4d6ZDLF/set-sabian.jpg', 
@@ -180,7 +180,7 @@ export const productos = [
         desc: 'Ride: 22" | Hi Hat: 15" | Crash: 17" - 18"'
     },
     {
-        id: 19, 
+        id: '21', 
         categoria: 'platillos',
         nombre: 'Paiste PST7 Set', 
         imagen: 'https://i.ibb.co/nm3FJX9/set-paiste.jpg', 
@@ -189,7 +189,7 @@ export const productos = [
         desc: 'Ride: 20" | Hi Hat: 14" | Crash: 16" - 18"'
     },
     {
-        id: 20, 
+        id: '22', 
         categoria: 'pedales',
         nombre: 'Tama Iron Cobra (Simple)', 
         imagen: 'https://i.ibb.co/m5np6rw/pedal-tama.jpg', 
@@ -198,7 +198,7 @@ export const productos = [
         desc: 'Doble cadena + cobra coil'
     },
     {
-        id: 21, 
+        id: '23', 
         categoria: 'pedales',
         nombre: 'DW 9002 (Doble)', 
         imagen: 'https://i.ibb.co/xY6Jr35/pedal-dw.jpg', 
@@ -207,16 +207,16 @@ export const productos = [
         desc: 'Doble cadena'
     },
     {
-        id: 22, 
+        id: '24', 
         categoria: 'baterias',
         nombre: 'Mapex Saturn V', 
-        imagen: 'https://i.ibb.co/xY6Jr35/pedal-dw.jpg', 
+        imagen: 'https://i.ibb.co/9v166k8/bateria-mapex.jpg', 
         precio: '$355000', 
         stock: 2,
         desc: 'Medidas: 10-12-14-16-22 | Madera: Maple | Acabado: Natural exotic'
     },
     {
-        id: 23, 
+        id: '25', 
         categoria: 'baterias',
         nombre: 'Pearl MCX', 
         imagen: 'https://i.ibb.co/jhX7RpN/bateria-pearl.jpg', 
@@ -225,7 +225,7 @@ export const productos = [
         desc: 'Medidas: 10-12-16-22 | Madera: Maple | Acabado: Natural'
     },
     {
-        id: 24, 
+        id: '26', 
         categoria: 'baterias',
         nombre: 'Tama Starclassic', 
         imagen: 'https://i.ibb.co/pRNch27/bateria-tama.jpg', 
