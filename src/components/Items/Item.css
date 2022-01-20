@@ -60,3 +60,8 @@
 .detail-precio {
     font-size: 20px;
 }
+
+.detail-btn-checkout {
+    display: flex;
+    flex-direction: column;
+}

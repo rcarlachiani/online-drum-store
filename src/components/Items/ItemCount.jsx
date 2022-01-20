@@ -1,13 +1,12 @@
 import React, { useState }  from 'react'
-import * as bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Item.css'
 
 function ItemCount(stockProd) {
 
     const [contador, setContador] = useState(1)
-    let stock = stockProd.cantidad
     
+    let stock = stockProd.stock
     
     const sumaContador=()=>{
         if (stock == contador)  {
@@ -32,7 +31,6 @@ function ItemCount(stockProd) {
                 <button type="button" className="btn btn-light contador">{contador}</button>
                 <button type="button" className="btn btn-sm btn-success btn-cantidad" onClick={sumaContador}>+</button>
             </div>
-            <button type="button" className="btn btn-outline-primary btn-agregar">Agregar al carrito</button>
         </div>
     )
 }
