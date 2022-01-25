@@ -1,12 +1,11 @@
 import React, { useState }  from 'react'
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Item.css'
 
-function ItemCount(stockProd) {
+function ItemCount( {stock, onAdd}) {
 
     const [contador, setContador] = useState(1)
-    
-    let stock = stockProd.stock
     
     const sumaContador=()=>{
         if (stock == contador)  {
@@ -23,6 +22,12 @@ function ItemCount(stockProd) {
             console.log("Cantidad mínima posible para agregar al carrito")
         }
     }
+
+    const [inputType, setInputType] = useState('button')
+
+    function handleInput() {
+        setInputType('input')
+    }
     
     return (
         <div>
@@ -31,6 +36,15 @@ function ItemCount(stockProd) {
                 <button type="button" className="btn btn-light contador">{contador}</button>
                 <button type="button" className="btn btn-sm btn-success btn-cantidad" onClick={sumaContador}>+</button>
             </div>
+            {
+                inputType === 'button' ?
+                <button onClick={()=> {onAdd(contador); handleInput()}} className="btn btn-outline-primary btn-agregar">Agregar al carrito</button>
+                :
+                <div className='detail-btn-checkout'>
+                    <Link to='/checkout'><button className="btn btn-outline-success btn-agregar">Finalizar compra</button></Link>
+                    <Link to='/'><button className="btn btn-sm btn-outline-primary">Seguir comprando</button></Link>
+                </div>
+            }
         </div>
     )
 }

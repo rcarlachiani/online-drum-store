@@ -10,43 +10,31 @@ function NavBar() {
                 <div className="container-fluid">
                     <img src="https://i.ibb.co/J7dM3BW/snLogo.png" alt="store-logo" style={{width: 35, paddingRight: 5}} />
                     <Link to='/' className='links'>
-                        <a className="navbar-brand" href="#">Drumstore</a>
+                        <div className="navbar-brand" href="#">Drumstore</div>
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <div className="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                                <ul className="navbar-nav">
-                                    <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Categorías
-                                    </a>
-                                    <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                        <Link to='./categoria/palillos' className='links'>
-                                            <li className="dropdown-item">Palillos</li>
-                                        </Link>
-                                        <Link to='./categoria/parches' className='links'>
-                                            <li className="dropdown-item">Parches</li>
-                                        </Link>
-                                        <Link to='./categoria/platillos' className='links'>
-                                            <li className="dropdown-item">Platillos</li>
-                                        </Link>
-                                        <Link to='./categoria/tambores' className='links'>
-                                            <li className="dropdown-item">Tambores</li>
-                                        </Link>
-                                        <Link to='./categoria/pedales' className='links'>
-                                            <li className="dropdown-item">Pedales</li>
-                                        </Link>
-                                        <Link to='./categoria/baterias' className='links'>
-                                            <li className="dropdown-item">Baterías</li>
-                                        </Link>
-                                    </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a className="nav-link" href="#">Contacto</a>
+                            <Link to='./categoria/palillos' className='links'>
+                                <div className="nav-link" href="#">Palillos</div>
+                            </Link>
+                            <Link to='./categoria/parches' className='links'>
+                                <div className="nav-link" href="#">Parches</div>
+                            </Link>
+                            <Link to='./categoria/platillos' className='links'>
+                                <div className="nav-link" href="#">Platillos</div>
+                            </Link>
+                            <Link to='./categoria/tambores' className='links'>
+                                <div className="nav-link" href="#">Tambores</div>
+                            </Link>
+                            <Link to='./categoria/pedales' className='links'>
+                                <div className="nav-link" href="#">Pedales</div>
+                            </Link>
+                            <Link to='./categoria/baterias' className='links'>
+                                <div className="nav-link" href="#">Baterías</div>
+                            </Link>
                         </div>
                     </div>
                     <Link to='/checkout'>
