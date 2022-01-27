@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/Navbar/NavBar';
+import Landing from './components/Landing/Landing';
 import ItemListContainer from './components/Items/ItemListContainer';
 import ItemDetailContainer from './components/Items/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
@@ -14,10 +15,11 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route exact path='/' element={<ItemListContainer titulo='Todos los productos' />} />
+          <Route exact path='/' element={<Landing />} />
+          <Route exact path='/productos' element={<ItemListContainer titulo='Todos los productos' />} />
           <Route exact path='/categoria/:idCategoria' element={<ItemListContainer />} />
           <Route exact path='/detalle/:idDetalle' element={<ItemDetailContainer />} />
-          <Route exact path='/checkout' element={<Cart />} />
+          <Route exact path='/cart' element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </CartContextProvider>

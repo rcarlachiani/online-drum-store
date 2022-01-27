@@ -1,33 +1,50 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import { CartContext } from '../Context/CartContext'
+import CartItem from './CartItem'
+import { BsFillCreditCardFill, BsFillCartCheckFill, BsFillCartXFill } from 'react-icons/bs';
 import './Cart.css'
 
 const Cart = () => {
 
-    const { cartList, vaciarCarrito } = useContext(CartContext)
+    const {cartList, precioTotalCarrito, vaciarCarrito} = useContext(CartContext)
 
-    return (
+    const costoCompra = precioTotalCarrito()
 
-        <div className='cartContainer'>
+    if (cartList.length!==0) {
 
-            {cartList.map(prod=> 
+        return (
+
+            <div className='cartContainer'>
+                
+                {cartList.map(productos=>(<CartItem key={productos.id} productos={productos}/>))}
+                <h2 className='mt-4'>TOTAL: ${costoCompra}</h2> 
+                <button onClick={vaciarCarrito} className="btn btn-outline-primary mt-4"><BsFillCartXFill className='me-2 mb-1' />  Vaciar carrito</button>
+                <button className="btn btn-outline-success mt-4"><BsFillCreditCardFill className='me-2 mb-1' />Ir a pagar</button>
+    
+            </div>
             
-                <ol key={prod.id} className="list-group listaCarrito">
-                    <li className="list-group-item d-flex justify-content-between align-items-start">
-                        <div className="ms-2 me-auto">
-                        <div className="fw-bold">{prod.nombre}</div>
-                        {prod.precio}
-                        </div>
-                        <span className="badge bg-primary rounded-pill">{prod.cantidad}</span>
-                    </li>
-                </ol>
-            )}
+        )
 
-            <button onClick={vaciarCarrito} className="btn btn-sm btn-outline-primary mt-4">Vaciar carrito</button>
+    } else {
 
-        </div>
-        
-    )
+        return (
+
+            <div className='d-flex flex-column align-items-center mt-4'>
+
+                <h2>¡Su carrito esta vacio!</h2>
+
+                <Link to='/'>
+                    <button className="btn btn-success mt-4"> <BsFillCartCheckFill className='me-2 mb-1' /> Ir a comprar</button>
+                </Link>
+
+            </div>
+
+        )
+
+    }
+
+    
 }
 
 export default Cart

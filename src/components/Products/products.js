@@ -4,7 +4,7 @@ export const productos = [
         categoria: 'palillos',
         nombre: 'Vic-Firth 7A (Wood tip)', 
         imagen: 'https://i.ibb.co/nQY5357/Vic-firth.jpg', 
-        precio: '$1200', 
+        precio: 1200, 
         stock: 10,
         desc: 'Madera: Hickory | Punta: Madera | Longitud: 40.80cm | Diámetro: 1.30cm'
     },
@@ -13,7 +13,7 @@ export const productos = [
         categoria: 'palillos',
         nombre: 'Los Cabos 5A (Wood tip)', 
         imagen: 'https://i.ibb.co/fDGSjWT/Los-cabos.jpg', 
-        precio: '$1250', 
+        precio: 1250, 
         stock: 5,
         desc: 'Madera: Hickory | Punta: Madera | Longitud: 40.55cm | Diámetro: 1.42cm'
     },
@@ -22,7 +22,7 @@ export const productos = [
         categoria: 'palillos',
         nombre: 'Vater 5B (Wood tip)', 
         imagen: 'https://i.ibb.co/9VnbPDT/Vater.jpg', 
-        precio: '$1150', 
+        precio: 1150, 
         stock: 8,
         desc: 'Madera: Hickory | Punta: Madera | Longitud: 40.35cm | Diámetro: 1.63cm'
     },
@@ -31,7 +31,7 @@ export const productos = [
         categoria: 'palillos',
         nombre: 'Pro-Mark 2B (Wood tip)', 
         imagen: 'https://i.ibb.co/Lgxm91T/Pro-mark.jpg', 
-        precio: '$1300', 
+        precio: 1300, 
         stock: 3,
         desc: 'Madera: Hickory | Punta: Madera | Longitud: 40.80cm | Diámetro: 1.81cm'
     },
@@ -40,7 +40,7 @@ export const productos = [
         categoria: 'parches',
         nombre: 'Remo Powerstroke 3 Clear 22"', 
         imagen: 'https://i.ibb.co/FXqD794/remo-ps3-clear.jpg', 
-        precio: '$9500', 
+        precio: 9500, 
         stock: 5,
         desc: 'Capa simple con aro de refuerzo'
     },
@@ -49,7 +49,7 @@ export const productos = [
         categoria: 'parches',
         nombre: 'Evans EMAD2 Clear 22"', 
         imagen: 'https://i.ibb.co/M9yd4F8/evans-emad2.jpg', 
-        precio: '$9650', 
+        precio: 9650, 
         stock: 2,
         desc: 'Capa doble con aro de refuerzo y damper intercambiable'
     },
@@ -58,7 +58,7 @@ export const productos = [
         categoria: 'parches',
         nombre: 'Evans Onyx 14"', 
         imagen: 'https://i.ibb.co/3WP0nk0/evans-onyx.jpg', 
-        precio: '$3500', 
+        precio: 3500, 
         stock: 3,
         desc: 'Capa doble con arenado color negro'
     },
@@ -67,7 +67,7 @@ export const productos = [
         categoria: 'parches',
         nombre: 'Evans Reverse Dot 14"', 
         imagen: 'https://i.ibb.co/zfz00D3/evans-reverse-dot.jpg', 
-        precio: '$3350', 
+        precio: 3350, 
         stock: 4,
         desc: 'Capa simple con centro reforzado y arenado mate semi-transparente'
     },
@@ -76,7 +76,7 @@ export const productos = [
         categoria: 'parches',
         nombre: 'Remo Emperor Clear 12"', 
         imagen: 'https://i.ibb.co/BqQJ3Dt/remo-clear.jpg', 
-        precio: '$2200', 
+        precio: 2200, 
         stock: 5,
         desc: 'Capa doble sin arenado ni aro de refuerzo'
     },
@@ -85,7 +85,7 @@ export const productos = [
         categoria: 'parches',
         nombre: 'Remo Emperor Clear 13"', 
         imagen: 'https://i.ibb.co/BqQJ3Dt/remo-clear.jpg', 
-        precio: '$2420', 
+        precio: 2420, 
         stock: 4,
         desc: 'Capa doble sin arenado ni aro de refuerzo'
     },
@@ -94,7 +94,7 @@ export const productos = [
         categoria: 'parches',
         nombre: 'Remo Emperor Clear 16"', 
         imagen: 'https://i.ibb.co/BqQJ3Dt/remo-clear.jpg', 
-        precio: '$2670', 
+        precio: 2670, 
         stock: 5,
         desc: 'Capa doble sin arenado ni aro de refuerzo'
     },
@@ -103,7 +103,7 @@ export const productos = [
         categoria: 'parches',
         nombre: 'Remo Ambassador Coated 10"', 
         imagen: 'https://i.ibb.co/9vFM54L/remo-arenado.jpg', 
-        precio: '$2120', 
+        precio: 2120, 
         stock: 2,
         desc: 'Capa simple con arenado'
     },
@@ -112,7 +112,7 @@ export const productos = [
         categoria: 'parches',
         nombre: 'Remo Ambassador Coated 12"', 
         imagen: 'https://i.ibb.co/9vFM54L/remo-arenado.jpg', 
-        precio: '$2200', 
+        precio: 2200, 
         stock: 3,
         desc: 'Capa simple con arenado'
     },
@@ -121,7 +121,7 @@ export const productos = [
         categoria: 'parches',
         nombre: 'Remo Ambassador Coated 14"', 
         imagen: 'https://i.ibb.co/9vFM54L/remo-arenado.jpg', 
-        precio: '$2360', 
+        precio: 2360, 
         stock: 8,
         desc: 'Capa simple con arenado'
     },
@@ -130,7 +130,7 @@ export const productos = [
         categoria: 'parches',
         nombre: 'Remo Ambassador Coated 16"', 
         imagen: 'https://i.ibb.co/9vFM54L/remo-arenado.jpg', 
-        precio: '$2500', 
+        precio: 2500, 
         stock: 7,
         desc: 'Capa simple con arenado'
     },
@@ -139,7 +139,7 @@ export const productos = [
         categoria: 'tambores',
         nombre: 'Pearl MCX 14x6.5', 
         imagen: 'https://i.ibb.co/GRsQDwk/tambor-pearl.jpg', 
-        precio: '$65000', 
+        precio: 65000, 
         stock: 2,
         desc: 'Casco: Maple | Aros: 2.3mm'
     },
@@ -148,7 +148,7 @@ export const productos = [
         categoria: 'tambores',
         nombre: 'Tama Metalworks 14x6.5', 
         imagen: 'https://i.ibb.co/HFngJGm/tambor-tama.jpg', 
-        precio: '$53000', 
+        precio: 53000, 
         stock: 1,
         desc: 'Casco: Steel | Aros: 2.3mm'
     },
@@ -157,7 +157,7 @@ export const productos = [
         categoria: 'tambores',
         nombre: 'DW Collectors Natural Maple 14x5.5', 
         imagen: 'https://i.ibb.co/NnNQYsq/tambor-dw.jpg', 
-        precio: '$85700', 
+        precio: 85700, 
         stock: 1,
         desc: 'Casco: Maple | Aros: 2.3mm'
     },
@@ -166,7 +166,7 @@ export const productos = [
         categoria: 'platillos',
         nombre: 'Zildjian Avedis Set', 
         imagen: 'https://i.ibb.co/Pc9ftbZ/set-zildjian.jpg', 
-        precio: '$125000', 
+        precio: 125000, 
         stock: 3,
         desc: 'Ride: 20" | Hi Hat: 14" | Crash: 16" - 18"'
     },
@@ -175,7 +175,7 @@ export const productos = [
         categoria: 'platillos',
         nombre: 'Sabian HHX Set', 
         imagen: 'https://i.ibb.co/4d6ZDLF/set-sabian.jpg', 
-        precio: '$123250', 
+        precio: 123250, 
         stock: 2,
         desc: 'Ride: 22" | Hi Hat: 15" | Crash: 17" - 18"'
     },
@@ -184,7 +184,7 @@ export const productos = [
         categoria: 'platillos',
         nombre: 'Paiste PST7 Set', 
         imagen: 'https://i.ibb.co/nm3FJX9/set-paiste.jpg', 
-        precio: '$99850', 
+        precio: 99850, 
         stock: 2,
         desc: 'Ride: 20" | Hi Hat: 14" | Crash: 16" - 18"'
     },
@@ -193,7 +193,7 @@ export const productos = [
         categoria: 'pedales',
         nombre: 'Tama Iron Cobra (Simple)', 
         imagen: 'https://i.ibb.co/m5np6rw/pedal-tama.jpg', 
-        precio: '$60199', 
+        precio: 60199, 
         stock: 4,
         desc: 'Doble cadena + cobra coil'
     },
@@ -202,7 +202,7 @@ export const productos = [
         categoria: 'pedales',
         nombre: 'DW 9002 (Doble)', 
         imagen: 'https://i.ibb.co/xY6Jr35/pedal-dw.jpg', 
-        precio: '$99500', 
+        precio: 99500, 
         stock: 1,
         desc: 'Doble cadena'
     },
@@ -211,7 +211,7 @@ export const productos = [
         categoria: 'baterias',
         nombre: 'Mapex Saturn V', 
         imagen: 'https://i.ibb.co/9v166k8/bateria-mapex.jpg', 
-        precio: '$355000', 
+        precio: 355000, 
         stock: 2,
         desc: 'Medidas: 10-12-14-16-22 | Madera: Maple | Acabado: Natural exotic'
     },
@@ -220,7 +220,7 @@ export const productos = [
         categoria: 'baterias',
         nombre: 'Pearl MCX', 
         imagen: 'https://i.ibb.co/jhX7RpN/bateria-pearl.jpg', 
-        precio: '$400000', 
+        precio: 400000, 
         stock: 1,
         desc: 'Medidas: 10-12-16-22 | Madera: Maple | Acabado: Natural'
     },
@@ -229,7 +229,7 @@ export const productos = [
         categoria: 'baterias',
         nombre: 'Tama Starclassic', 
         imagen: 'https://i.ibb.co/pRNch27/bateria-tama.jpg', 
-        precio: '$670000', 
+        precio: 670000, 
         stock: 1,
         desc: 'Medidas: 10-12-14-16-22 | Madera: Bubinga | Acabado: Silver sparkle w/gold'
     }

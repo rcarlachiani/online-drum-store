@@ -1,0 +1,10 @@
+.container-carousel {
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+}
+
+.carousel-css {
+    border-radius: 20px;
+}

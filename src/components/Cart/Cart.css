@@ -5,6 +5,10 @@
     align-items: center;
 }
 
-.listaCarrito {
+.lista-carrito {
     width: 500px;
+}
+
+.img-carrito {
+    width: 50px;
 }

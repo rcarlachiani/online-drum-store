@@ -26,7 +26,8 @@ function ItemListContainer(propiedades) {
 
     return (
         <div style={{marginTop: 20, textAlign: 'center'}}>
-            <h1 style={{margin: 20}}>{propiedades.titulo}</h1>
+            <h2 style={{margin: 20}}>{propiedades.titulo}</h2>
+            <h2 className='text-capitalize' style={{margin: 20}}>{idCategoria}</h2>
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 { loading ? <div className="spinner-border text-warning" role="status">
                                 <span className="visually-hidden">Loading...</span>

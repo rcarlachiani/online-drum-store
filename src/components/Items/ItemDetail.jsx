@@ -6,9 +6,7 @@ import './Item.css'
 
 function ItemDetail({producto}) {
 
-    const { cartList, agregarAlCarrito } = useContext(CartContext)
-
-    console.log(cartList)
+    const { agregarAlCarrito } = useContext(CartContext)
 
     function onAdd(contador) {
         agregarAlCarrito( {...producto, cantidad: contador} )
@@ -25,7 +23,7 @@ function ItemDetail({producto}) {
                         <div className="card-body">
                             <h4 className="card-title">{producto.nombre}</h4>
                             <p className="card-text detail-descripcion">{producto.desc}</p>
-                            <p className="card-text detail-precio">{producto.precio}</p>
+                            <p className="card-text detail-precio">${producto.precio}</p>
                             <ItemCount stock={producto.stock} onAdd={onAdd} /> 
                         </div>
                     </div>

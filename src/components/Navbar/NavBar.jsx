@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import './NavBar.css'
 
 function NavBar() {
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -37,7 +38,7 @@ function NavBar() {
                             </Link>
                         </div>
                     </div>
-                    <Link to='/checkout'>
+                    <Link to='/cart'>
                         <CartWidget />
                     </Link>
                 </div>
