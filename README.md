@@ -2,7 +2,7 @@
 
 :gear: Tecnologías y herramientas utilizadas:
 
-:zap: ReactJS + Vite + Bootstrap
+:zap: HTML5, CSS, ReactJS, Vite, Firebase y Bootstrap
 <br/>
 
 :bulb: El proyecto consiste en el desarrollo de un carrito de compras.
