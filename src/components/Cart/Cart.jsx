@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { CartContext } from '../Context/CartContext'
 import CartItem from './CartItem'
 import { BsFillCreditCardFill, BsFillCartCheckFill, BsFillCartXFill } from 'react-icons/bs';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Cart.css'
 
 const Cart = () => {
@@ -34,7 +35,7 @@ const Cart = () => {
 
                 <h2>¡Su carrito esta vacio!</h2>
 
-                <Link to='/'>
+                <Link to='/productos'>
                     <button className="btn btn-success mt-4"> <BsFillCartCheckFill className='me-2 mb-1' /> Ir a comprar</button>
                 </Link>
 

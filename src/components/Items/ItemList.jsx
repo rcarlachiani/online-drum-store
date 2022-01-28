@@ -1,5 +1,6 @@
 import React from 'react'
 import Item from './Item'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Item.css'
 
 function ItemList({productos}) {

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { renderProd } from '../Products/products'
 import { useParams } from 'react-router-dom'
-import ItemDetail from './ItemDetail'
+import { doc, getDoc, getFirestore } from 'firebase/firestore'
+import ItemDetail from './ItemDetail' 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Item.css'
 
 
@@ -11,8 +12,12 @@ const ItemDetailContainer = () => {
     const {idDetalle} = useParams()
 
     useEffect(() => {
-        renderProd
-        .then(resp => setProducto(resp.find(prod=> prod.id === idDetalle)))
+
+        const db = getFirestore()
+        const queryProd = doc(db, 'Productos', idDetalle)
+        getDoc(queryProd)
+        .then(res => setProducto( {id: res.id, ...res.data()} ))
+
     }, [])
     
     

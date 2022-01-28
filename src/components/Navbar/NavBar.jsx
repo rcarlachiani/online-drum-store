@@ -1,6 +1,7 @@
 import React from 'react'
 import CartWidget from '../Cart/CartWidget'
 import { Link } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './NavBar.css'
 
 function NavBar() {
@@ -41,6 +42,7 @@ function NavBar() {
                     <Link to='/cart'>
                         <CartWidget />
                     </Link>
+
                 </div>
             </nav>
         </div>

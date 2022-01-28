@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Landing.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel } from 'bootstrap';
 import { BsCart4 } from 'react-icons/bs';
+import { Carousel } from 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Landing.css'
 
 function Landing() {
   
@@ -12,7 +12,7 @@ function Landing() {
         <div className='container container-carousel'>
 
             <h2 className='my-3'><strong>De</strong> bateristas... <strong>para</strong> bateristas</h2>
-            
+
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -57,6 +57,7 @@ function Landing() {
             </button></Link>
 
         </div>
+        
 
     )
 }

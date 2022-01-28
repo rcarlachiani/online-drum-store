@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { renderProd } from "../Products/products";
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 import ItemList from './ItemList';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Item.css'
 
 function ItemListContainer(propiedades) {
@@ -11,18 +12,26 @@ function ItemListContainer(propiedades) {
     const {idCategoria} = useParams()
 
     useEffect(() => {
-        if (idCategoria) {
-            renderProd
-            .then(resp => setProductos(resp.filter(prod=> prod.categoria === idCategoria)))
-            .catch(err => console.log(err))
+
+
+        if (idCategoria)  {
+            const db = getFirestore()
+            const queryCollection = query(collection(db, 'Productos'), where ('categoria', '==' , idCategoria))
+            getDocs(queryCollection)
+            .then(res => setProductos(res.docs.map(prod => ({id: prod.id, ...prod.data()}))))
+            .catch(err => err)
             .finally(()=> setLoading(false))
+
         } else {
-            renderProd
-            .then(resp => setProductos(resp))
-            .catch(err => console.log(err))
+            const db = getFirestore()
+            const queryCollection = query(collection(db, 'Productos'))
+            getDocs(queryCollection)
+            .then(res => setProductos(res.docs.map(prod => ({id: prod.id, ...prod.data()}))))
+            .catch(err => err)
             .finally(()=> setLoading(false))
         }
     }, [idCategoria])
+
 
     return (
         <div style={{marginTop: 20, textAlign: 'center'}}>
@@ -40,3 +49,18 @@ function ItemListContainer(propiedades) {
 }
 
 export default ItemListContainer
+
+
+/*        
+        if (idCategoria) {
+            renderProd
+            .then(resp => setProductos(resp.filter(prod=> prod.categoria === idCategoria)))
+            .catch(err => console.log(err))
+            .finally(()=> setLoading(false))
+        } else {
+            renderProd
+            .then(resp => setProductos(resp))
+            .catch(err => console.log(err))
+            .finally(()=> setLoading(false))
+        }
+*/

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsFillEyeFill } from 'react-icons/bs';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Item.css'
 
 function Item(prod) {

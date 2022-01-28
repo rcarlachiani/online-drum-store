@@ -1,4 +1,4 @@
-export const productos = [
+/* export const productos = [
     {
         id: '1', 
         categoria: 'palillos',
@@ -245,3 +245,4 @@ export const renderProd = new Promise ((resolve, reject)=>{
         reject('Error')
     }
 })
+*/

@@ -1,7 +1,7 @@
 import React, { useState }  from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { BsCart4, BsCheckCircle, BsFillCartCheckFill, BsCaretUpFill, BsCaretDownFill } from 'react-icons/bs';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Item.css'
 
 function ItemCount( {stock, onAdd}) {

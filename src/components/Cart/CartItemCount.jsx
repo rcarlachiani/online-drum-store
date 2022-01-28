@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BsCaretUpFill, BsCaretDownFill } from 'react-icons/bs';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CartItemCount({stock, cantidad, contadorCarrito}) {
 

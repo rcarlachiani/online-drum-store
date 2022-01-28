@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../Context/CartContext';
 import CartItemCount from './CartItemCount';
+import { CartContext } from '../Context/CartContext';
 import { BsFillTrashFill } from 'react-icons/bs';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CartItem({productos}) {
 
