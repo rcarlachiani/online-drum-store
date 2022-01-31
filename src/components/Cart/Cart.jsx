@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../Context/CartContext'
+import { BsBoxSeam, BsFillCartCheckFill, BsFillCartXFill } from 'react-icons/bs';
 import CartItem from './CartItem'
-import { BsFillCreditCardFill, BsFillCartCheckFill, BsFillCartXFill } from 'react-icons/bs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Cart.css'
 
@@ -21,8 +21,9 @@ const Cart = () => {
                 {cartList.map(productos=>(<CartItem key={productos.id} productos={productos}/>))}
                 <h2 className='mt-4'>TOTAL: ${costoCompra}</h2> 
                 <button onClick={vaciarCarrito} className="btn btn-outline-primary mt-4"><BsFillCartXFill className='me-2 mb-1' />  Vaciar carrito</button>
-                <button className="btn btn-outline-success mt-4"><BsFillCreditCardFill className='me-2 mb-1' />Ir a pagar</button>
-    
+                <Link to='/checkout'>
+                    <button className="btn btn-outline-success mt-4"><BsBoxSeam className='me-2 mb-1' />Generar orden</button>
+                </Link>
             </div>
             
         )

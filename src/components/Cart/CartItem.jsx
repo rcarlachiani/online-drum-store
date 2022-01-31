@@ -20,14 +20,14 @@ function CartItem({productos}) {
                 <ol className="list-group lista-carrito">
                         <li className="list-group-item d-flex justify-content-between align-items-center">
                             <button type="button" className="btn btn-sm text-center btn-danger me-4" onClick={() => quitarItem({id})}>
-                                <BsFillTrashFill className='' />
+                                <BsFillTrashFill />
                             </button>
                             <img src={imagen} alt="imagen de producto" className='img-carrito mt-1 ms-2 me-4' />
                             <div className="ms-2 me-auto">
                                 <div className="fw-bold">{nombre}</div>
                                 ${precio}
                             </div>
-                            <CartItemCount stock={stock} cantidad={cantidad} contadorCarrito={contadorCarrito}/>
+                            <CartItemCount stock={stock} cantidad={cantidad} contadorCarrito={contadorCarrito} />
                         </li>
                     </ol>
             </div>)
