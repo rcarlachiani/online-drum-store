@@ -8,4 +8,8 @@
 :bulb: El proyecto consiste en el desarrollo de un carrito de compras.
 <br/>
 
-:battery: En desarrollo
+:grey_question: Cómo iniciar:
+
+1. npm install
+
+2. npm run dev
