@@ -1,18 +1,34 @@
-import { useState } from 'react'
-import './App.css'
-import * as bootstrap from 'bootstrap';
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { CartContextProvider } from './components/Context/CartContext';
+import NavBar from './components/Navbar/NavBar';
+import Landing from './components/Landing/Landing';
+import ItemListContainer from './components/Items/ItemListContainer';
+import ItemDetailContainer from './components/Items/ItemDetailContainer';
+import Cart from './components/Cart/Cart';
+import Checkout from './components/Cart/Checkout';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <NavBar />
-      <ItemListContainer titulo='Catalogo de productos' />
-    </div>
+
+    <CartContextProvider>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route exact path='/' element={<Landing />} />
+          <Route exact path='/productos' element={<ItemListContainer titulo='Todos los productos' />} />
+          <Route exact path='/categoria/:idCategoria' element={<ItemListContainer />} />
+          <Route exact path='/detalle/:idDetalle' element={<ItemDetailContainer />} />
+          <Route exact path='/cart' element={<Cart />} />
+          <Route exact path='/checkout' element={<Checkout />} />      
+        </Routes>
+      </BrowserRouter>
+    </CartContextProvider>
+    
   )
 }
 

@@ -1,0 +1,26 @@
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.lista-carrito {
+    width: 600px;
+}
+
+.img-carrito {
+    width: 50px;
+}
+
+.form-container {
+    width: 700px;
+}
+
+.resumen-container {
+    width: 500px;
+}
+
+.resumen-items {
+    font-size: 18px;
+}

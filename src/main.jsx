@@ -1,7 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
 import App from './App'
+import { getFiresotreApp } from './firebase/dbConfig'
+import './index.css'
+
+getFiresotreApp
 
 ReactDOM.render(
   <React.StrictMode>
