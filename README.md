@@ -8,4 +8,8 @@
 :bulb: El proyecto consiste en el desarrollo de una tienda de artículos de batería.
 <br/>
 
-:battery: En desarrollo
+❔ Cómo iniciar:
+
+npm install
+
+npm run dev
