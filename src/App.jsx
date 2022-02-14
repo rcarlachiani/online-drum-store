@@ -7,7 +7,7 @@ import ItemDetailContainer from './components/Items/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Cart/Checkout';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Success from './components/Cart/Success';
+
 
 
 
@@ -24,8 +24,7 @@ function App() {
           <Route exact path='/categoria/:idCategoria' element={<ItemListContainer />} />
           <Route exact path='/detalle/:idDetalle' element={<ItemDetailContainer />} />
           <Route exact path='/cart' element={<Cart />} />
-          <Route exact path='/checkout' element={<Checkout />} />
-          <Route exact path='/success' element={<Success />} />
+          <Route exact path='/checkout' element={<Checkout />} />      
         </Routes>
       </BrowserRouter>
     </CartContextProvider>

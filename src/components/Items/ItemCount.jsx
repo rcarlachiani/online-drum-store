@@ -1,5 +1,5 @@
 import React, { useState }  from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { BsCart4, BsCheckCircle, BsFillCartCheckFill, BsCaretUpFill, BsCaretDownFill } from 'react-icons/bs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Item.css'
@@ -9,12 +9,10 @@ function ItemCount( {stock, onAdd}) {
     const [contador, setContador] = useState(1)
 
     const [inputType, setInputType] = useState('button')
-
-    const navegacion = useNavigate();
     
     const sumaContador=()=>{
         if (stock == contador)  {
-            alert ('Stock máximo del producto agregado')
+            alert('Stock máximo del producto agregado')
         } else {
             setContador(contador+1)
         }

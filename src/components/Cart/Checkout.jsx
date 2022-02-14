@@ -7,7 +7,9 @@ import { addDoc, collection, getFirestore } from 'firebase/firestore'
 
 function Checkout() {
 
-    const { cartList, carritoPopUp, precioTotalCarrito } = useContext(CartContext)
+    const { cartList, carritoPopUp, precioTotalCarrito, vaciarCarrito } = useContext(CartContext)
+
+    const [idCompra, setIdCompra] = useState('')
 
     const [dataForm, setDataForm] = useState({
         nombre: '',
@@ -52,9 +54,9 @@ function Checkout() {
         const ordenCollection = collection(db, 'Ordenes')
 
         await addDoc(ordenCollection, orden)
-        .then (res => alert('Su id de compra es: ' + res.id + '\n' + 'Nos pondremos en contacto a la brevedad vía mail, ¡Muchas gracias por su compra! '))
+        .then (res => setIdCompra(res.id))
         .catch (err => console.log(err))
-        .finally (()=> alert('Compra exitosa'))
+        .finally (()=> console.log('Compra exitosa'))
 
     }
     
@@ -96,12 +98,33 @@ function Checkout() {
                             <Form.Control type='text' name='cp' onChange={handleChange} value={dataForm.cp}/>
                         </Form.Group>
                         
-                        <Button variant="outline-success" type="submit" className='mt-2' onClick={finalizarCompra}>
+                        <Button variant="outline-success" type="submit" className='mt-2' onClick={finalizarCompra} data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <BsFillBagCheckFill className='me-2 mb-1'/>
                             Finalizar orden
                         </Button>
 
                     </Form>
+
+                    <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal-dialog">
+                            <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Compra exitosa</h5>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                                ¡Felicitaciones por su compra!<br />
+                                Su ID de orden es: <b>{idCompra}</b><br />
+                                Nos pondremos en contacto a la brevedad vía mail
+                            </div>
+                            <div className="modal-footer">
+                                <Link to='/'>
+                                    <button onClick={vaciarCarrito} type="button" className="btn btn-primary" data-bs-dismiss="modal">Volver al home</button>
+                                </Link>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                     
