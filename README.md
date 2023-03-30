@@ -3,6 +3,7 @@
 Fictitious online store for drum items.
 Final project for the ReactJS subject of the Coderhouse Web Development major.
 <br>
+<br>
 :computer: Developed with React.js using Google Firebase to create the database and Bootstrap for the styles.
 <br>
 
@@ -19,7 +20,8 @@ Final project for the ReactJS subject of the Coderhouse Web Development major.
 <br>
 Tienda online ficticia de artículos para batería. 
 Proyecto final para la materia ReactJS de la carrera de Desarrollo Web de Coderhouse.
-<br>  
+<br>
+<br>
 :computer: Desarrollado con React.js utilizando Google Firebase para crear la base de datos y Bootstrap para los estilos.
 
 :grey_question: Cómo iniciar:
