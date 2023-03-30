@@ -1,7 +1,7 @@
 :gb: EN
 <br>
 Fictitious online store for drum items.
-Final project for the ReactJS subject of the Coderhouse Web Development major.
+Final project for the ReactJS subject of the Coderhouse Web Development major.<br>
 :computer: Developed with React.js using Google Firebase to create the database and Bootstrap for the styles.
 <br>
 
