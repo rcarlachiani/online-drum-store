@@ -1,4 +1,8 @@
-.links{
+.navbar {
+    z-index: 5;
+}
+
+.links {
     text-decoration: none;
     color: whitesmoke;
 }

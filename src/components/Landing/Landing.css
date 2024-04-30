@@ -1,8 +1,7 @@
 .container-carousel {
     width: 800px !important;
-    height: 600px !important;
+    height: fit-content !important;
     text-align: center;
-    align-items: center;
 }
 
 .carousel-css {

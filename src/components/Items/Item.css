@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 300px 300px 300px;
     gap: 50px;
-    
 }
 
 .card-img-top {
@@ -40,7 +39,6 @@
     display: flex; 
     justify-content: center; 
     text-align: center; 
-    margin-top: 50px;
 }
 
 .detail-card {
